@@ -17,6 +17,11 @@ data=data.set_index("code")
 def ponerAmigos():
     shuffle(amigos)
     data["friend"]=amigos
+    for x in range(len(amigos)):
+        if(data.index[x]==amigos[x]):
+            ponerAmigos()
+            break
+        
     
 ponerAmigos()
 print(data)
