@@ -21,13 +21,10 @@ def ponerAmigos():
         if(data.index[x]==amigos[x]):
             ponerAmigos()
             break
-        
+    print(data)
+    print("")
     
 ponerAmigos()
-print(data)
-print("")
-
-
 
 def datos(obj):
     print(obj)
