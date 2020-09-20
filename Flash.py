@@ -113,7 +113,7 @@ def codigo_page_post(codigo):
 #     return(HTML_TEMPLATE1.substitute(replace_codigo=codigo,replace_name=codigo))
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(host='0.0.0.0', port=80)
 
 
 # def ifA(text):
